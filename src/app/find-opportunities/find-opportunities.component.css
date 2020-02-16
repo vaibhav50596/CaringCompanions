@@ -44,6 +44,7 @@
 .profile-card-4 .card-text{
     font-weight:300;
     font-size:15px;
+    width: 750px;
 }
 .profile-card-4 .icon-block{
     float:left;
@@ -82,7 +83,7 @@
 }
 
 .bio {
-    margin-top: -150px
+    margin-top: -190px
 }
 
 .mt-30 {

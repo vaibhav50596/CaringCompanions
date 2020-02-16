@@ -35,6 +35,16 @@ export class HomePageComponent implements OnInit {
       }
       this.citizensService.changeState(vaibhavData);
       this.router.navigate(['/findOpportunitites'], {state: {data: vaibhavData}});
+    } else if (key == 'general'){
+      const generalData = {
+        "volunteer_name": "General",
+        "volunteer_email":"None",
+        "time_slot": "None",
+        "senior_citizen": {},
+        "interests": []
+      }
+      this.citizensService.changeState(generalData);
+      this.router.navigate(['/findOpportunitites'], {state: {data: generalData}});
     }
   }
 }
