@@ -25,9 +25,9 @@
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img routerLink="" class="logo-size" alt="Caring Companions Logo" src="../assets/logo.png"/>
+  <img routerLink="" class="logo-size" alt="Caring Companions Logo" src="../assets/logo.png" (click)="clearData()"/>
     <div class="spacer"></div>
-  <p class="user">Logged in as: User</p>
+  <p *ngIf="volunteerData?.volunteer_name" class="user">Logged in as: {{volunteerData?.volunteer_name}} </p>
   <a aria-label="Follow us on twitter!" target="_blank" rel="noopener" href="https://twitter.com/ThanmayeeMudig1" title="Twitter">
     
     <svg id="twitter-logo" height="24" data-name="Logo — FIXED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">

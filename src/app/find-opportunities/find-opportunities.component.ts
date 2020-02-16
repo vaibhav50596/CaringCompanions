@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {SeniorCitizen} from '../senior-citizen'
 import {SENIORS} from '../mock-citizens'
 import { CaringCompanionsServiceService } from '../caring-companions-service.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-find-opportunities',
@@ -13,9 +15,11 @@ import { Router } from '@angular/router';
 export class FindOpportunitiesComponent implements OnInit {
   cards: SeniorCitizen[] = [];
   private card : String;
-  
+  state$: Observable<object>;
+  loginData;
 
-  constructor(private citizensService: CaringCompanionsServiceService, private router: Router) { }
+  constructor(private citizensService: CaringCompanionsServiceService, private router: Router,
+    public activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.citizensService.getProducts().subscribe(res => {
@@ -23,6 +27,19 @@ export class FindOpportunitiesComponent implements OnInit {
     },
     err => {
       console.log(err);
+    })
+    this.getLoginDetails();
+  }
+
+  getLoginDetails() {
+    this.state$ = this.activatedRoute.paramMap
+      .pipe(map(() => window.history.state))
+    
+      this.state$.subscribe(res => {
+      if(res) {
+        this.loginData = res['data'];
+        console.log(this.loginData);
+      }
     })
   }
 
