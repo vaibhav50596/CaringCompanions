@@ -1,9 +1,4 @@
 .logo-size{
     width: 200px;
     height: 200px;
-    cursor: pointer;
-}
-
-.logo-size:hover{
-    opacity: 0.8;
 }

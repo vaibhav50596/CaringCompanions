@@ -49,7 +49,5 @@
   </a>
 </div>
 
-<app-home-page></app-home-page>
-<!-- <app-find-opportunities>
-  
-</app-find-opportunities> -->
+<app-find-opportunities *ngIf="router.url != '/person'"></app-find-opportunities>
+<router-outlet></router-outlet>

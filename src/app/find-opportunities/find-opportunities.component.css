@@ -70,15 +70,11 @@
 }
 
 .col-md-12 {
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 .individual-name-bio {
-    margin-left: 200px;
-}
-
-.individual-card {
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 .bio {
@@ -105,24 +101,13 @@
 }
 
 .badge-p1{
-    background-color: #f78f08;
+    background-color: #e1a80b;
 }
 
 .badge-p2{
     background-color: #e1240b;
 }
 
-.badge-p3{
-    background-color: #12ac1a;
-}
-
-.badge-p4{
-    background-color: #f1da09;
-}
-.badge-p5{
-    background-color: #15aacf;
-}
-
-.badge-p6{
-    background-color: #7a12f0;
+.badge {
+    margin-right: 10px;
 }
