@@ -84,3 +84,17 @@
 .mt-40 {
     margin-top: -40px;
 }
+
+.f-r {
+    float: right;
+}
+
+.select-box {
+    margin: 15px 15px 15px 0px;
+    padding: 5px 5px;
+    width: 150px;
+}
+
+.g-color {
+    color: rgb(34, 121, 8);
+}

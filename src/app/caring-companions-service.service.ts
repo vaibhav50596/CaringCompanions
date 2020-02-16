@@ -16,6 +16,7 @@ export class CaringCompanionsServiceService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
   apiUrl = 'http://34.205.63.53:5000/';
+  isHit: boolean = false;
 
 
   constructor(private http: HttpClient) { }
@@ -28,10 +29,10 @@ export class CaringCompanionsServiceService {
       );
   }
 
-  getMatchedSeniors(volunteer_name : string): Observable<any[]>{
-    return this.http.get<any[]>(this.apiUrl + 'getmatchingcitizens', { headers : {'X-volunteer': volunteer_name}})
+  getMatchedSeniors(volunteer_name: string): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl + 'getmatchingcitizens', { headers: { 'X-volunteer': volunteer_name } })
       .pipe(
-        tap(product => console.log('fetched products')),
+        tap(product => console.log('fetched data')),
         catchError(this.handleError('getProducts', []))
       );
   }
@@ -44,6 +45,14 @@ export class CaringCompanionsServiceService {
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
+  }
+
+  postVolunteerRequest(object): Observable<any[]> {
+    return this.http.post<any[]>(this.apiUrl + 'sendemail', object)
+      .pipe(
+        tap(product => console.log('posted data')),
+        catchError(this.handleError('getProducts', []))
+      );
   }
 
   changeState(myChange) {

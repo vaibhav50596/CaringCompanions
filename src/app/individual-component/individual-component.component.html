@@ -2,7 +2,7 @@
     <div class="col-md-10 individual-card">
         <div class="card mb-20">
             <div class="card-body pt-5">
-                <div class="col-md-8 row">
+                <div class="col-md-12 row">
                     <img class="profile profile-size" [src]="data?.profile" alt="profile-image" />
                     <div class="col-md-8 individual-name-bio mt-40">
                         <div class="bio">
@@ -16,7 +16,18 @@
                                     'badge-p9': interest=='politics', 'badge-p10': interest=='poetry', 'badge-p11': interest=='home building',
                                     'badge-p12': interest=='design', 'badge-p13': interest=='cooking'}">{{interest}}</span>
                             </h5>
-
+                            <form [formGroup]="myGroup">
+                                <select class="form-control form-control-sm select-box" id="country" formControlName="timeSlot">
+                                    <option *ngFor="let c of data?.timeslots" [ngValue]="c">{{ c }}</option>
+                                </select>
+                            </form>
+                            <div class="row f-r">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary"
+                                        (click)="postVolunteerRequest(data)">Connect</button>
+                                </div>
+                            </div>
+                            <div class="g-color">{{emailResponse}}</div>
                             <!-- <p-calendar [(ngModel)]="startAnalyzeModel" [defaultDate]="defaultDate" name="startAnalyze"
                                 [showTime]="true" [dateFormat]="dateFormat" [locale]="ru"></p-calendar> -->
                         </div>
