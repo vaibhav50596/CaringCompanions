@@ -1,3 +1,26 @@
-.profile-image{
-    background-image: "../assets/background.jpg"
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 40rem;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.home-image{
+    width: 100%;
+}
+
+.mr-25{
+    margin-right: 25px;
 }
