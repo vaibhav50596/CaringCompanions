@@ -3,8 +3,7 @@
 
 <div class="row mx-0 px-3">
     <div class="col-md-10 individual-name-bio">
-        <div class="card">
-           
+        <div class="card mb-20" *ngFor="let card of cards">
                 <div class="profile-card-4">
                     <!-- <div class="card-img-block">
                         <div class="info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -16,12 +15,11 @@
                         <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="profile-image" class="profile"/>
                         <div class="col-md-8 individual-name-bio">
                             <div class="bio">
-                            <h5 class="card-title">Gail Schmidt</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
+                            <h5 class="card-title">{{card.name}}</h5>
+                            <p class="card-text">{{card.bio}}</p>
                             </div>
                         </div>
-                       </div>
+                    </div>
                         <!-- <div class="icon-block text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
                     </div>
                 </div>
@@ -29,3 +27,4 @@
         </div>
     </div>
 </div>
+

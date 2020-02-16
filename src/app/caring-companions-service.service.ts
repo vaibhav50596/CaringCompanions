@@ -11,7 +11,7 @@ export class CaringCompanionsServiceService {
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
-  apiUrl = 'http://www.mocky.io/v2/5e488f5b3000007400294b2e';
+  apiUrl = 'http://www.mocky.io/v2/5e4893913000007400294b2f';
 
   
   constructor(private http: HttpClient) { }
@@ -26,8 +26,7 @@ export class CaringCompanionsServiceService {
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-  
-      // TODO: send the error to remote logging infrastructure
+
       console.error(error); // log to console instead
   
       // Let the app keep running by returning an empty result.
