@@ -1,7 +1,7 @@
 import { SeniorCitizen } from './senior-citizen';
 
 export const SENIORS: SeniorCitizen[] = [
-  { name: 'Sally', bio: 'Hi I am looking for friends', location: 'Bonaventure senior home', interests: '' },
-  { name: 'Rob', bio: 'I love sports!', location: 'Bonaventure senior home', interests: '' },
-  { name: 'Sammy', bio: 'I love to knit', location: 'Bonaventure senior home', interests: '' }
+  { name: 'Sally', descr: 'Hi I am looking for friends', home: 'Bonaventure senior home', interests: '', profile: ''},
+  { name: 'Rob', descr: 'I love sports!', home: 'Bonaventure senior home', interests: '', profile: '' },
+  { name: 'Sammy', descr: 'I love to knit', home: 'Bonaventure senior home', interests: '', profile: '' }
 ];

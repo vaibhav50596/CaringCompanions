@@ -21,7 +21,7 @@
 }
 .profile-card-4 .card-img-block > .info-box{
     position:absolute;
-    background:rgba(217,11,225,0.6);
+    background:#0bafe1;
     width:100%;
     height:100%;
     color:#fff;
@@ -39,7 +39,7 @@
 }
 .profile-card-4 h5{
     font-weight:600;
-    color:#d90be1;
+    
 }
 .profile-card-4 .card-text{
     font-weight:300;
@@ -55,9 +55,9 @@
 .profile-card-4 i {
   display: inline-block;
     font-size: 16px;
-    color: #d90be1;
+    color: #38788b;
     text-align: center;
-    border: 1px solid #d90be1;
+    border: 1px solid #0bafe1;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -65,7 +65,7 @@
     margin:0 5px;
 }
 .profile-card-4 i:hover {
-  background-color:#d90be1;
+  background-color:#0bafe1;
   color:#fff;
 }
 
@@ -87,4 +87,23 @@
 
 .mb-20{
     margin-bottom: 20px;
+}
+
+.profile-size{
+    width: 200px;
+    height: 200px;
+}
+
+.card-body:hover{
+  background-color:#a1a1a1; 
+  color:#fff !important;
+  cursor: pointer;
+}
+
+.badge-p1{
+    background-color: #e1a80b;
+}
+
+.badge-p2{
+    background-color: #e1240b;
 }

@@ -1,6 +1,7 @@
 export type SeniorCitizen = {
     name: string;
-    bio: string;
-    location: string;
+    descr: string;
+    home: string;
     interests: string;
+    profile: string;
 }

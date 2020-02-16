@@ -1,5 +1,4 @@
-<p>find-opportunities works!</p>
-
+<p></p>
 
 <div class="row mx-0 px-3">
     <div class="col-md-10 individual-name-bio">
@@ -11,14 +10,21 @@
                     </div> -->
                     <div class="card-body pt-5">
                         <div class="col-md-8 row"> 
-                            
-                        <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="profile-image" class="profile"/>
+                        <img class="profile profile-size" [src]="card.profile" alt="profile-image"/>
                         <div class="col-md-8 individual-name-bio">
                             <div class="bio">
                             <h5 class="card-title">{{card.name}}</h5>
-                            <p class="card-text">{{card.bio}}</p>
+                            <p class="card-text">{{card.descr}}</p>
+                            <p class="card-text">{{card.home}}</p>
+                            <span class="badge badge-pill badge-primary" *ngFor="let interest of card.interests"
+                            [ngClass]="{'badge-p1': interest=='bike', 'badge-p2': interest=='eating',
+                            'badge-p3': interest=='sleeping', 'badge-p4': interest=='hiking', 'badge-p5': interest==card.interests[4],
+                            'badge-p6': interest==card.interests[5], 'badge-p7': interest==card.interests[6], 'badge-p8': interest==card.interests[7],
+                            'badge-p9': interest==card.interests[8], 'badge-p10': interest==card.interests[9]}"
+                            >{{interest}}</span>   
                             </div>
                         </div>
+                        
                     </div>
                         <!-- <div class="icon-block text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
                     </div>

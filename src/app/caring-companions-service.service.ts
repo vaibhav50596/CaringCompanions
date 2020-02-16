@@ -11,7 +11,7 @@ export class CaringCompanionsServiceService {
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
-  apiUrl = 'http://www.mocky.io/v2/5e4893913000007400294b2f';
+  apiUrl = 'http://34.205.63.53:5000/getcitizens';
 
   
   constructor(private http: HttpClient) { }

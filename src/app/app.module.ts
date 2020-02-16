@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CaringCompanionsServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

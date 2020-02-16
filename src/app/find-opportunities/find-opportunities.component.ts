@@ -3,6 +3,7 @@ import {SeniorCitizen} from '../senior-citizen'
 import {SENIORS} from '../mock-citizens'
 import { CaringCompanionsServiceService } from '../caring-companions-service.service';
 
+
 @Component({
   selector: 'app-find-opportunities',
   templateUrl: './find-opportunities.component.html',
