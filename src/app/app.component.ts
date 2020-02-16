@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'CaringCompanions';
 
-  constructor(private router: Router){
+  constructor(public router: Router){
+    console.log(router.url)
   }
 }

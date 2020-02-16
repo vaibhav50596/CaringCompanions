@@ -50,5 +50,6 @@
   </a>
 </div>
 
-<app-find-opportunities *ngIf="router.url != '/person'"></app-find-opportunities>
+<app-home-page *ngIf="router.url == '/home'"></app-home-page>
+<app-find-opportunities *ngIf="router.url == '/findOpportunitites'"></app-find-opportunities>
 <router-outlet></router-outlet>
