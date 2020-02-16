@@ -1,0 +1,27 @@
+<div class="row mx-0 p-5">
+    <div class="col-md-10 individual-name-bio">
+        <div class="card mb-20">
+            <div class="card-body pt-5">
+                <div class="col-md-8 row">
+                    <img class="profile profile-size" [src]="data?.profile" alt="profile-image" />
+                    <div class="col-md-8 individual-name-bio mt-40">
+                        <div class="bio">
+                            <p class="card-text">{{data?.name}}</p>
+                            <p class="card-text">{{data?.descr}}</p>
+                            <p class="card-text">{{data?.home}}</p>
+                            <h5><span class="badge badge-pill badge-primary" *ngFor="let interest of data?.interests"
+                                    [ngClass]="{'badge-p1': interest=='bike', 'badge-p2': interest=='eating',
+                            'badge-p3': interest=='sleeping', 'badge-p4': interest=='hiking', 'badge-p5': interest==data?.interests[4],
+                            'badge-p6': interest==data?.interests[5], 'badge-p7': interest==data?.interests[6], 'badge-p8': interest==data?.interests[7],
+                            'badge-p9': interest==data?.interests[8], 'badge-p10': interest==data?.interests[9]}">{{interest}}</span>
+                            </h5>
+
+                            <!-- <p-calendar [(ngModel)]="startAnalyzeModel" [defaultDate]="defaultDate" name="startAnalyze"
+                                [showTime]="true" [dateFormat]="dateFormat" [locale]="ru"></p-calendar> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
