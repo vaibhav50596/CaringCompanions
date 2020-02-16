@@ -6,12 +6,14 @@ import { FindOpportunitiesComponent } from './find-opportunities/find-opportunit
 import { HttpClientModule } from '@angular/common/http';
 import { IndividualComponent } from './individual-component/individual-component.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FindOpportunitiesComponent,
-    IndividualComponent
+    IndividualComponent,
+    HomePageComponent
   ],
   imports: [
     HttpClientModule,
