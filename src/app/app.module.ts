@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FindOpportunitiesComponent } from './find-opportunities/find-opportunities.component';
 import { CaringCompanionsServiceService } from './caring-companions-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FindOpportunitiesComponent
+    FindOpportunitiesComponent,
+    HomePageComponent
   ],
   imports: [
     HttpClientModule,

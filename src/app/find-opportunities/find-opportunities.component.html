@@ -1,7 +1,7 @@
 <p></p>
 
 <div class="row mx-0 px-3">
-    <div class="col-md-10 individual-name-bio">
+    <div class="col-md-10 individual-card">
         <div class="card mb-20" *ngFor="let card of cards">
                 <div class="profile-card-4">
                     <!-- <div class="card-img-block">
@@ -17,10 +17,9 @@
                             <p class="card-text">{{card.descr}}</p>
                             <p class="card-text">{{card.home}}</p>
                             <span class="badge badge-pill badge-primary" *ngFor="let interest of card.interests"
-                            [ngClass]="{'badge-p1': interest=='bike', 'badge-p2': interest=='eating',
-                            'badge-p3': interest=='sleeping', 'badge-p4': interest=='hiking', 'badge-p5': interest==card.interests[4],
-                            'badge-p6': interest==card.interests[5], 'badge-p7': interest==card.interests[6], 'badge-p8': interest==card.interests[7],
-                            'badge-p9': interest==card.interests[8], 'badge-p10': interest==card.interests[9]}"
+                            [ngClass]="{'badge-p1': interest=='biking', 'badge-p2': interest=='eating',
+                            'badge-p3': interest=='sleeping', 'badge-p4': interest=='hiking', 'badge-p5': interest=='singing',
+                            'badge-p6': interest=='dancing'}"
                             >{{interest}}</span>   
                             </div>
                         </div>
