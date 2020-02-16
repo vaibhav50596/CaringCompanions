@@ -8,24 +8,26 @@
                         <div class="info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                         <img class="img-fluid" src="https://images.pexels.com/photos/965157/pexels-photo-965157.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
                     </div> -->
-                    <div class="card-body pt-5">
-                        <div class="col-md-8 row"> 
-                        <img class="profile profile-size" [src]="card.profile" alt="profile-image"/>
-                        <div class="col-md-8 individual-name-bio">
-                            <div class="bio">
-                            <h5 class="card-title">{{card.name}}</h5>
-                            <p class="card-text">{{card.descr}}</p>
-                            <p class="card-text">{{card.home}}</p>
-                            <h5><span class="badge badge-pill badge-primary" *ngFor="let interest of card.interests"
-                            [ngClass]="{'badge-p1': interest=='bike', 'badge-p2': interest=='eating',
-                            'badge-p3': interest=='sleeping', 'badge-p4': interest=='hiking', 'badge-p5': interest==card.interests[4],
-                            'badge-p6': interest==card.interests[5], 'badge-p7': interest==card.interests[6], 'badge-p8': interest==card.interests[7],
-                            'badge-p9': interest==card.interests[8], 'badge-p10': interest==card.interests[9]}"
-                            >{{interest}}</span></h5>
+                    <div class="bg-light text-dark">
+                        <div class="card-body pt-5">
+                                <div class="col-md-8 row"> 
+                                <img class="profile profile-size" [src]="card.profile" alt="profile-image"/>
+                                <div class="col-md-8 individual-name-bio">
+                                    <div class="bio">
+                                    <h5 class="card-title">{{card.name}}</h5>
+                                    <p class="card-text">{{card.descr}}</p>
+                                    <p class="card-text">{{card.home}}</p>
+                                    <h5><span class="badge badge-pill badge-primary" *ngFor="let interest of card.interests"
+                                    [ngClass]="{'badge-p1': interest=='music', 'badge-p2': interest=='chess',
+                                    'badge-p3': interest=='photography', 'badge-p4': interest=='games', 'badge-p5': interest=='reading',
+                                    'badge-p6': interest=='sleeping', 'badge-p7': interest=='helping kids', 'badge-p8': interest=='knitting',
+                                    'badge-p9': interest=='politics', 'badge-p10': interest=='poetry', 'badge-p11': interest=='home building',
+                                    'badge-p12': interest=='design', 'badge-p13': interest=='cooking'}"
+                                    >{{interest}}</span></h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                    </div>
                         <!-- <div class="icon-block text-center"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
                     </div>
                 </div>

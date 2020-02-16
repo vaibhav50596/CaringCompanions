@@ -99,7 +99,7 @@
 }
 
 .card-body:hover{
-  background-color:#a1a1a1; 
+  background-color:#a09a9a; 
   color:#fff !important;
   cursor: pointer;
 }
@@ -109,7 +109,51 @@
 }
 
 .badge-p2{
-    background-color: #e1240b;
+    background-color: #e1720b;
+}
+
+.badge-p3{
+    background-color: #06e006;
+}
+
+.badge-p4{
+    background-color: #b91515;
+}
+
+.badge-p5{
+    background-color: #ebe721;
+}
+
+.badge-p6{
+    background-color: #5a06e0;
+}
+
+.badge-p7{
+    background-color: #06e073c0;
+}
+
+.badge-p8{
+    background-color: #065de0;
+}
+
+.badge-p9{
+    background-color: #e00611;
+}
+
+.badge-p10{
+    background-color: #32e006;
+}
+
+.badge-p11{
+    background-color: #5bbb93;
+}
+
+.badge-p12{
+    background-color: #9e5fc9;
+}
+
+.badge-p13{
+    background-color: #daba0a;
 }
 
 .badge {

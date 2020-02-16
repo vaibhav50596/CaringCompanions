@@ -4,5 +4,10 @@
 }
 
 .logo-size:hover{
-    opacity: 0.8
+    opacity: 0.8;
+}
+
+.user{
+    margin-right: 100px;
+    margin-top: 20px;
 }
