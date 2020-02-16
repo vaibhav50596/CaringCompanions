@@ -24,6 +24,59 @@
 .bio {
     margin-top: -150px
 }
+
+.badge-p1{
+    background-color: #e1a80b;
+}
+
+.badge-p2{
+    background-color: #e1720b;
+}
+
+.badge-p3{
+    background-color: #06e006;
+}
+
+.badge-p4{
+    background-color: #b91515;
+}
+
+.badge-p5{
+    background-color: #ebe721;
+}
+
+.badge-p6{
+    background-color: #5a06e0;
+}
+
+.badge-p7{
+    background-color: #06e073c0;
+}
+
+.badge-p8{
+    background-color: #065de0;
+}
+
+.badge-p9{
+    background-color: #e00611;
+}
+
+.badge-p10{
+    background-color: #32e006;
+}
+
+.badge-p11{
+    background-color: #5bbb93;
+}
+
+.badge-p12{
+    background-color: #9e5fc9;
+}
+
+.badge-p13{
+    background-color: #daba0a;
+}
+
 .badge {
     margin-right: 10px;
 }
