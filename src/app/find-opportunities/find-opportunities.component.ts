@@ -43,6 +43,15 @@ export class FindOpportunitiesComponent implements OnInit {
     })
   }
 
+  getMatchedSeniors(){
+    this.citizensService.getMatchedSeniors(this.loginData.volunteer_name).subscribe(res => {
+      this.cards=res;
+    },
+    err => {
+      console.log(err);
+    })
+  }
+
   openIndividualScreen(user: SeniorCitizen) {
     this.citizensService.userData = user;
     this.router.navigate(['/person'], {state: {data: user}});

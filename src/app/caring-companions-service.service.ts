@@ -15,13 +15,21 @@ export class CaringCompanionsServiceService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  apiUrl = 'http://34.205.63.53:5000/getcitizens';
+  apiUrl = 'http://34.205.63.53:5000/';
 
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl)
+    return this.http.get<any[]>(this.apiUrl + 'getcitizens')
+      .pipe(
+        tap(product => console.log('fetched products')),
+        catchError(this.handleError('getProducts', []))
+      );
+  }
+
+  getMatchedSeniors(volunteer_name : string): Observable<any[]>{
+    return this.http.get<any[]>(this.apiUrl + 'getmatchingcitizens', { headers : {'X-volunteer': volunteer_name}})
       .pipe(
         tap(product => console.log('fetched products')),
         catchError(this.handleError('getProducts', []))
