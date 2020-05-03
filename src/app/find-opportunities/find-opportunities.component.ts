@@ -50,7 +50,7 @@ export class FindOpportunitiesComponent implements OnInit {
     this.cards = undefined;
     this.citizensService.getMatchedSeniors(this.loginData.volunteer_name).subscribe(res => {
       if(res) {
-        this.cards = uniqBy(res, '_id');
+        this.cards = uniqBy(res, 'citizenid');
         this.wholeData = [];
         this.wholeData = cloneDeep(this.cards);
       }
@@ -65,7 +65,7 @@ export class FindOpportunitiesComponent implements OnInit {
     this.cards = undefined;
     this.citizensService.getProducts().subscribe(res => {
       if(res) {
-        this.cards = uniqBy(res, '_id');
+        this.cards = uniqBy(res, 'citizenid');
         this.wholeData = [];
         this.wholeData = cloneDeep(this.cards);
       }
