@@ -15,7 +15,7 @@ export class CaringCompanionsServiceService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  apiUrl = 'http://34.205.63.53:5000/';
+  apiUrl = 'https://6p0z6gepe8.execute-api.us-east-1.amazonaws.com/dev/';
   isHit: boolean = false;
 
 
